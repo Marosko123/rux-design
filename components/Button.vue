@@ -6,7 +6,7 @@
 
 <style scoped lang="scss">
 .button {
-  background-color: #ee325c;
+  background-color: var(--pink);
   color: white;
   border: none;
   padding: 0 15px;
@@ -19,6 +19,6 @@
 }
 
 .button:hover {
-  background-color: #ff4d80;
+  background-color: var(--pink-hover);
 }
 </style>

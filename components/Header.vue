@@ -1,5 +1,5 @@
 <template>
-  <div class="header big-padding">
+  <div class="header big-padding rows-wrapper color-gradient-to-right-bottom">
     <div class="top-line">
       <Logo />
       <Button>Mám záujem o UX audit</Button>
@@ -13,9 +13,6 @@
 
 <style scoped lang="scss">
 .header {
-  background: linear-gradient(159.13deg, #3d2e80 51.38%, #dc1969 125.72%);
-  height: 554px;
-
   .top-line {
     display: flex;
     justify-content: space-between;
@@ -26,7 +23,7 @@
   .title-wrapper {
     margin: auto;
     margin-top: 75px;
-    width: 600px;
+    width: 690px;
     align-items: center;
     text-align: center;
   }
