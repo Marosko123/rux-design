@@ -1,7 +1,7 @@
 <template>
   <div class="footer big-padding color-gradient-to-right-bottom">
     <div class="title-wrapper">
-      <h1 class="title">Máte otázky? Jednoducho sa spýtajte.</h1>
+      <h1>Máte otázky? Jednoducho sa spýtajte.</h1>
     </div>
 
     <div class="contact-line">
@@ -33,6 +33,7 @@
     font-weight: 700;
     line-height: 40px;
     text-align: left;
+    color: white;
   }
 
   .logo {

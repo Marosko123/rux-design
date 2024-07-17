@@ -4,5 +4,8 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   pages: true,
   css: ["@/assets/css/main.scss"],
-  modules: ["@nuxtjs/google-fonts"],
+  modules: ["nuxt-mdi"],
+  typescript: {
+    typeCheck: true,
+  },
 });

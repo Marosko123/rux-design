@@ -6,7 +6,7 @@
     </div>
 
     <div class="title-wrapper">
-      <h1 class="title">Zvýšte svoje zisky optimalizáciou vášho eshopu.</h1>
+      <h1>Zvýšte svoje zisky optimalizáciou vášho eshopu.</h1>
     </div>
   </div>
 </template>
@@ -21,8 +21,7 @@
   }
 
   .title-wrapper {
-    margin: auto;
-    margin-top: 75px;
+    margin: 75px auto;
     width: 690px;
     align-items: center;
     text-align: center;
