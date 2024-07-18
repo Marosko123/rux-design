@@ -46,7 +46,9 @@
         </div>
 
         <div class="button-wrapper">
-          <Button>Mám záujem o UX audit</Button>
+          <Button :click-callback="showApplyDialog">
+            Mám záujem o UX audit
+          </Button>
         </div>
       </div>
     </div>
@@ -68,7 +70,9 @@
         </p>
 
         <div class="button-wrapper">
-          <Button>Mám záujem o UX audit</Button>
+          <Button :click-callback="showApplyDialog">
+            Mám záujem o UX audit
+          </Button>
         </div>
       </div>
 
@@ -125,6 +129,10 @@ const reviews = [
     "S UX tímom Riešení úzko spolupracujeme už dlhé roky a sú dôležitým partnerom nášho biznisu. Vďaka ich know-how pre nás od samého začatku správne nastavili zdravý pomer prvotriedneho dizajnu a funkčnosti webu, ktorý následne vylepšovali pomocou relevantných analýz a dát. Aj ich zásluhou. Zmazat Zmazat Zmazat Zmazat Zmazat Zmazat Zmazat Zmazat Zmazat Zmazat Zmazat Zmazat Zmazat Zmazat Zmazat Zmazat Zmazat Zmazat Zmazat Zmazat Zmazat Zmazat"
   ),
 ];
+
+const showApplyDialog = () => {
+  window.postMessage("open-dialog");
+};
 </script>
 
 <style scoped lang="scss">

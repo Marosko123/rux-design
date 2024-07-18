@@ -11,7 +11,7 @@
   --white-transparent: #ffffffe5;
   --light: #e7e8eb;
   --light-gray: #d6d8dd;
-  --light-gray-hover: #efefef;
+  --light-gray-2: #efefef;
   --gray: #7e7e7e;
   --pink: #ee325c;
   --pink-hover: #d61f4d;
@@ -20,6 +20,7 @@
   --light-yellow: #e1d18a;
   --purple: #3d2d82;
   --green-icon: "#6bbc13";
+  --green: #00a74a;
 
   // ------ BORDERS ------
   --border-light: 1px solid var(--light-gray);
@@ -44,8 +45,30 @@
   --goal-transition: all var(--transition-duration-slow);
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--pink);
+
+  &:hover {
+    background: var(--pink-hover);
+  }
+
+  &:active {
+    background: var(--pink-active);
+  }
+}
+
+::-webkit-scrollbar-track {
+  background: var(--light-gray);
+}
+
 body {
   margin: 0;
+  background: var(--white);
+  color: var(--black);
 }
 
 div,

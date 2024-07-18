@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   pages: true,
   css: ["@/assets/css/main.scss"],
-  modules: ["nuxt-mdi"],
+  modules: ["nuxt-mdi", "@nuxt/ui"],
   typescript: {
     typeCheck: true,
   },

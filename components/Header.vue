@@ -2,7 +2,7 @@
   <div class="header big-padding rows-wrapper color-gradient-to-right-bottom">
     <div class="top-line">
       <Logo />
-      <Button>Mám záujem o UX audit</Button>
+      <Button :click-callback="showApplyDialog">Mám záujem o UX audit</Button>
     </div>
 
     <div class="title-wrapper">
@@ -12,6 +12,12 @@
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+const showApplyDialog = () => {
+  window.postMessage("open-dialog");
+};
+</script>
 
 <style scoped lang="scss">
 .header {
