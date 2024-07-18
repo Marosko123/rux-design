@@ -2,7 +2,7 @@
   <div class="main big-padding">
     <div class="columns-wrapper">
       <div class="column first-column">
-        <h2>Rýchle výsledky pomocou UX auditu.</h2>
+        <h2>Rýchle <u>výsledky</u> pomocou UX auditu.</h2>
 
         <p class="first-paragraph">
           UX auditom vášho riešenia lepšie pochopíte, ako vaši zákazníci
@@ -55,13 +55,13 @@
 
     <ReviewsList :reviews="reviews" />
 
-    <h2 class="middle-title">Rýchla a jednoduchá cesta k výsledkom.</h2>
+    <h2 class="middle-title">Rýchla a jednoduchá cesta k <u>výsledkom.</u></h2>
 
     <Goals />
 
     <div class="bottom-columns columns-wrapper">
       <div class="column first-column">
-        <h2>Zameriame sa na to najdôležitejšie.</h2>
+        <h2>Zameriame sa na to <u>najdôležitejšie.</u></h2>
 
         <p class="first-paragraph">
           Dosiahnite lepšie výsledky vašej webstránky alebo e-shopu
@@ -222,6 +222,78 @@ const showApplyDialog = () => {
 
     .checkmarks-wrapper {
       margin-top: -40px;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .main {
+    .columns-wrapper {
+      flex-direction: column;
+      gap: 20px;
+
+      .column {
+        width: 100%;
+
+        h2 {
+          width: 100%;
+          margin-bottom: 20px;
+        }
+
+        .first-paragraph {
+          width: 100%;
+          margin-bottom: 40px;
+        }
+
+        .second-paragraph {
+          width: 100%;
+        }
+      }
+
+      .second-column {
+        .partners {
+          img {
+            width: 120px;
+            height: 56px;
+          }
+        }
+
+        .checkmarks-wrapper {
+          gap: 10px;
+          margin-bottom: 40px;
+        }
+
+        .button-wrapper {
+          .button {
+            width: 100%;
+            height: 60px;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+
+    .middle-title {
+      width: 100%;
+      margin-top: 20px;
+      margin-bottom: 80px;
+      text-align: left;
+    }
+
+    .bottom-columns {
+      margin-top: 40px;
+
+      .button-wrapper {
+        .button {
+          width: 100%;
+          height: 60px;
+          font-size: 16px;
+        }
+      }
+
+      .checkmarks-wrapper {
+        margin-top: -20px;
+      }
     }
   }
 }

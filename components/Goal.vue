@@ -12,7 +12,10 @@
       <p class="text" />
     </div>
 
-    <GoalArrow v-if="!isRight() && !isLast()" :isRight="isRight()" />
+    <GoalArrow
+      v-if="!isRight() && !isLast()"
+      class="arrow"
+      :isRight="isRight()" />
   </div>
 </template>
 
@@ -41,6 +44,10 @@ const getClassList = () => {
 
   classList.push(isRight() ? "goal-right" : "goal-left");
 
+  if (isLast()) {
+    classList.push("goal-last");
+  }
+
   return classList.join(" ");
 };
 
@@ -62,9 +69,14 @@ onBeforeMount(() => {
   height: 140px;
   width: 600px;
   transition: var(--goal-transition);
+  margin-bottom: 80px;
 
   &.goal-right {
     margin-left: 350px;
+
+    &.goal-last {
+      justify-content: right;
+    }
   }
 
   &:hover {
@@ -86,6 +98,36 @@ onBeforeMount(() => {
       font-weight: 400;
       line-height: 28px;
       text-align: left;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .goal {
+    gap: 20px;
+    height: 100px;
+    width: 100%;
+
+    &.goal-right {
+      margin-left: 0;
+    }
+
+    .arrow {
+      display: none;
+    }
+
+    .content {
+      width: 100%;
+
+      .title {
+        font-size: 20px;
+        line-height: 25px;
+      }
+
+      .text {
+        font-size: 14px;
+        line-height: 24px;
+      }
     }
   }
 }

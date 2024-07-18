@@ -46,4 +46,29 @@
     user-select: none;
   }
 }
+
+@media (max-width: 425px) {
+  .footer {
+    .title-wrapper {
+      margin-top: 40px;
+      margin-bottom: 40px;
+      width: 100%;
+      padding: 0 20px;
+    }
+
+    .contact-line {
+      flex-direction: column;
+      gap: 20px;
+      font-size: 20px;
+      line-height: 30px;
+      text-align: center;
+    }
+
+    .logo {
+      width: 200px;
+      height: 33px;
+      margin-bottom: 30px;
+    }
+  }
+}
 </style>

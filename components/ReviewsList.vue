@@ -22,4 +22,13 @@ const props = defineProps({
   gap: 40px;
   margin-top: 100px;
 }
+
+@media (max-width: 425px) {
+  .reviews-list {
+    flex-direction: column;
+    gap: 80px;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}
 </style>

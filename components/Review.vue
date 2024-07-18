@@ -17,8 +17,8 @@
       </svg>
 
       <div class="text">
-        {{ truncatedText
-        }}<a class="read-more" v-if="isTextTruncated" @click="readMore()">
+        {{ truncatedText }}
+        <a class="read-more" v-if="isTextTruncated" @click="readMore()">
           čítať viac
         </a>
       </div>
@@ -76,10 +76,14 @@ const readMore = () => {
 .review {
   height: 400px;
   width: 420px;
+  transition: var(--review-transition);
+
+  &:hover {
+    scale: 1.05;
+  }
 
   .text-with-quotes {
     border: var(--border-light);
-    height: 290px;
     margin-bottom: 20px;
 
     .quotes {
@@ -97,6 +101,8 @@ const readMore = () => {
       text-align: left;
 
       margin: auto;
+      margin-bottom: 20px;
+      padding: 10px;
     }
 
     .read-more {
@@ -126,6 +132,44 @@ const readMore = () => {
         font-weight: 900;
         line-height: 22px;
         text-align: left;
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .review {
+    width: 100%;
+    height: auto;
+
+    .text-with-quotes {
+      height: auto;
+
+      .text {
+        width: 100%;
+      }
+    }
+
+    .author-row {
+      gap: 10px;
+
+      img {
+        width: 64px;
+        height: 64px;
+      }
+
+      .company-data {
+        height: auto;
+
+        .author {
+          font-size: 16px;
+          line-height: 22px;
+        }
+
+        .position {
+          font-size: 16px;
+          line-height: 22px;
+        }
       }
     }
   }

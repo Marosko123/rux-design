@@ -43,6 +43,7 @@
   --btn-transition: all var(--transition-duration) ease-in-out;
   --goal-transition: all var(--transition-duration) ease-in-out;
   --goal-transition: all var(--transition-duration-slow);
+  --review-transition: all var(--transition-duration) ease-in-out;
 }
 
 ::-webkit-scrollbar {
@@ -69,6 +70,8 @@ body {
   margin: 0;
   background: var(--white);
   color: var(--black);
+
+  width: 100vw;
 }
 
 div,
@@ -109,6 +112,17 @@ a {
   }
 }
 
+u {
+  text-decoration: underline;
+  text-decoration-color: #ee325b2b;
+  text-decoration-line: underline;
+  text-decoration-thickness: 14px;
+}
+
 .big-padding {
   padding: 40px;
+
+  @media (max-width: 425px) {
+    padding: 20px;
+  }
 }

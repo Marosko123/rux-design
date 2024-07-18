@@ -1,8 +1,10 @@
 <template>
-  <div class="header big-padding rows-wrapper color-gradient-to-right-bottom">
+  <div class="header big-padding color-gradient-to-right-bottom">
     <div class="top-line">
       <Logo />
-      <Button :click-callback="showApplyDialog">Mám záujem o UX audit</Button>
+      <Button class="register-button" :click-callback="showApplyDialog"
+        >Mám záujem o UX audit</Button
+      >
     </div>
 
     <div class="title-wrapper">
@@ -22,6 +24,7 @@ const showApplyDialog = () => {
 <style scoped lang="scss">
 .header {
   background: var(--linear-gradient-header);
+  width: 100vw;
 
   .top-line {
     display: flex;
@@ -35,6 +38,27 @@ const showApplyDialog = () => {
     width: 690px;
     align-items: center;
     text-align: center;
+  }
+}
+
+@media (max-width: 425px) {
+  .header {
+    .top-line {
+      padding: 0;
+
+      .register-button {
+        position: absolute;
+        top: 350px;
+        left: calc(50% - 100px);
+      }
+    }
+
+    .title-wrapper {
+      margin-top: 40px;
+      margin-bottom: 130px;
+      width: 100%;
+      padding: 0 20px;
+    }
   }
 }
 </style>
