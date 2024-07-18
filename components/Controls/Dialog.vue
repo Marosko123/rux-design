@@ -5,10 +5,10 @@
     <div class="dialog" v-if="isOpen">
       <div class="header">
         <div></div>
-        <Button
+        <ControlsButton
           :click-callback="closeClicked"
           icon="mdiClose"
-          :isCircle="true"></Button>
+          :isCircle="true"></ControlsButton>
       </div>
 
       <div class="dialog-body">
@@ -63,12 +63,12 @@
             }}</span>
           </div>
 
-          <Button
+          <ControlsButton
             v-if="!showSuccess"
             class="contact-me-button"
             :click-callback="submit">
             Kontaktujte ma
-          </Button>
+          </ControlsButton>
 
           <div v-if="showSuccess">
             <p class="success">Vaša správa bola úspešne odoslaná!</p>
@@ -304,6 +304,19 @@ onMounted(() => {
           font-size: 0.875rem;
           margin: 0px;
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .dialog-wrapper {
+    .dialog {
+      width: 85%;
+
+      .dialog-body {
+        scale: 0.8;
+        padding: 0;
       }
     }
   }

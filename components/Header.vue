@@ -2,9 +2,9 @@
   <div class="header big-padding color-gradient-to-right-bottom">
     <div class="top-line">
       <Logo />
-      <Button class="register-button" :click-callback="showApplyDialog"
-        >Mám záujem o UX audit</Button
-      >
+      <ControlsButton class="register-button" :click-callback="showApplyDialog">
+        Mám záujem o UX audit
+      </ControlsButton>
     </div>
 
     <div class="title-wrapper">

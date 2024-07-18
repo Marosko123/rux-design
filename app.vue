@@ -2,6 +2,6 @@
   <div>
     <NuxtPage />
 
-    <Dialog />
+    <ControlsDialog />
   </div>
 </template>

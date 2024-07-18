@@ -20,32 +20,32 @@
       </div>
 
       <div class="grid-item box-5 checkmarks-wrapper">
-        <Text
+        <ControlsText
           value="Odhalíme nedostatky na vašej stránke"
           icon="mdiCheckCircle"
           iconColor="#6bbc13" />
-        <Text
+        <ControlsText
           value="Zvýšime konverzný pomer vašich stránok"
           icon="mdiCheckCircle"
           iconColor="#6bbc13" />
-        <Text
+        <ControlsText
           value="Zvýšime výkon marketingových kampaní"
           icon="mdiCheckCircle"
           iconColor="#6bbc13" />
-        <Text
+        <ControlsText
           value="Znížime vaše náklady na vývoj"
           icon="mdiCheckCircle"
           iconColor="#6bbc13" />
-        <Text
+        <ControlsText
           value="Zvýšime návštevnosť vašich stránok"
           icon="mdiCheckCircle"
           iconColor="#6bbc13" />
       </div>
 
       <div class="grid-item box-6 button-wrapper">
-        <Button :click-callback="showApplyDialog">
+        <ControlsButton :click-callback="showApplyDialog">
           Mám záujem o UX audit
-        </Button>
+        </ControlsButton>
       </div>
 
       <ReviewsList class="grid-item box-7" :reviews="reviews" />
@@ -54,7 +54,7 @@
         Rýchla a jednoduchá cesta k <u>výsledkom.</u>
       </h2>
 
-      <Goals class="grid-item box-9" />
+      <GoalsGoalss class="grid-item box-9" />
 
       <h2 class="grid-item box-10">
         Zameriame sa na to <u>najdôležitejšie.</u>
@@ -67,33 +67,33 @@
       </p>
 
       <div class="grid-item box-12 button-wrapper">
-        <Button :click-callback="showApplyDialog">
+        <ControlsButton :click-callback="showApplyDialog">
           Mám záujem o UX audit
-        </Button>
+        </ControlsButton>
       </div>
 
       <div class="grid-item box-13 checkmarks-wrapper">
-        <Text
+        <ControlsText
           value="Informačnú architektúru a štruktúru kategórií"
           icon="mdiCheckCircle"
           iconColor="#6bbc13" />
-        <Text
+        <ControlsText
           value="Správanie návštevníkov na kľúčových stránkach"
           icon="mdiCheckCircle"
           iconColor="#6bbc13" />
-        <Text
+        <ControlsText
           value="Rýchlosť a dostupnosť stránok, SEO nastavenia"
           icon="mdiCheckCircle"
           iconColor="#6bbc13" />
-        <Text
+        <ControlsText
           value="Váš biznis a vašich zákazníkov"
           icon="mdiCheckCircle"
           iconColor="#6bbc13" />
-        <Text
+        <ControlsText
           value="Ciele, ktoré chcete dosiahnuť"
           icon="mdiCheckCircle"
           iconColor="#6bbc13" />
-        <Text
+        <ControlsText
           value="Webovú analytiku"
           icon="mdiCheckCircle"
           iconColor="#6bbc13" />

@@ -1,18 +1,18 @@
 <template>
   <div :id="getId()" :class="getClassList()">
-    <GoalArrow
+    <GoalsGoalArrow
       v-if="isRight() && !isLast()"
       class="arrow"
       :isRight="isRight()" />
 
-    <GoalNumber :number="props.number" />
+    <GoalsGoalNumber :number="props.number" />
 
     <div class="content">
       <span class="title">{{ title }}</span>
       <p class="text" />
     </div>
 
-    <GoalArrow
+    <GoalsGoalArrow
       v-if="!isRight() && !isLast()"
       class="arrow"
       :isRight="isRight()" />

@@ -1,6 +1,9 @@
 <template>
   <div class="reviews-list">
-    <Review :review="review" v-for="(review, key) of reviews" :key="key" />
+    <ReviewsReview
+      :review="review"
+      v-for="(review, key) of reviews"
+      :key="key" />
   </div>
 </template>
 
