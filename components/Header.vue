@@ -30,7 +30,7 @@ const showApplyDialog = () => {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 150px;
+    padding: 20px 250px;
   }
 
   .title-wrapper {

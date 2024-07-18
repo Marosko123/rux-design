@@ -36,7 +36,7 @@ const getIconStyle = () => {
   align-items: center;
 
   .icon {
-    width: 24px;
+    width: 24px !important;
     height: 24px;
     font-size: 24px;
   }
@@ -46,6 +46,7 @@ const getIconStyle = () => {
     font-weight: 600;
     line-height: 27px;
     text-align: left;
+    width: 100%;
   }
 }
 </style>

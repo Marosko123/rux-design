@@ -1,110 +1,102 @@
 <template>
   <div class="main big-padding">
-    <div class="columns-wrapper">
-      <div class="column first-column">
-        <h2>Rýchle <u>výsledky</u> pomocou UX auditu.</h2>
+    <div class="grid-wrapper">
+      <h2 class="grid-item box-1">Rýchle <u>výsledky</u> pomocou UX auditu.</h2>
 
-        <p class="first-paragraph">
-          UX auditom vášho riešenia lepšie pochopíte, ako vaši zákazníci
-          používajú váš produkt,
-          <b> zvýšite ich spokojnosť a hlavne vaše zisky. </b>
-        </p>
+      <p class="grid-item box-2 first-paragraph">
+        UX auditom vášho riešenia lepšie pochopíte, ako vaši zákazníci používajú
+        váš produkt,
+        <b> zvýšite ich spokojnosť a hlavne vaše zisky. </b>
+      </p>
 
-        <p class="second-paragraph">
-          Dosiahnite lepšie výsledky vašej webstránky alebo e-shopu
-          <b>pomocou UX auditu.</b>
-        </p>
+      <p class="grid-item box-3 second-paragraph">
+        Dosiahnite lepšie výsledky vašej webstránky alebo e-shopu
+        <b>pomocou UX auditu.</b>
+      </p>
+
+      <div class="grid-item box-4 partners">
+        <img src="/google_partner.png" alt="google partner" />
+        <img src="/member_of_adma.png" alt="member of adma" />
       </div>
 
-      <div class="column second-column">
-        <div class="partners">
-          <img src="/google_partner.png" alt="google partner" />
-          <img src="/member_of_adma.png" alt="member of adma" />
-        </div>
-
-        <div class="checkmarks-wrapper">
-          <Text
-            value="Odhalíme nedostatky na vašej stránke"
-            icon="mdiCheckCircle"
-            iconColor="#6bbc13" />
-          <Text
-            value="Zvýšime konverzný pomer vašich stránok"
-            icon="mdiCheckCircle"
-            iconColor="#6bbc13" />
-          <Text
-            value="Zvýšime výkon marketingových kampaní"
-            icon="mdiCheckCircle"
-            iconColor="#6bbc13" />
-          <Text
-            value="Znížime vaše náklady na vývoj"
-            icon="mdiCheckCircle"
-            iconColor="#6bbc13" />
-          <Text
-            value="Zvýšime návštevnosť vašich stránok"
-            icon="mdiCheckCircle"
-            iconColor="#6bbc13" />
-        </div>
-
-        <div class="button-wrapper">
-          <Button :click-callback="showApplyDialog">
-            Mám záujem o UX audit
-          </Button>
-        </div>
-      </div>
-    </div>
-
-    <ReviewsList :reviews="reviews" />
-
-    <h2 class="middle-title">Rýchla a jednoduchá cesta k <u>výsledkom.</u></h2>
-
-    <Goals />
-
-    <div class="bottom-columns columns-wrapper">
-      <div class="column first-column">
-        <h2>Zameriame sa na to <u>najdôležitejšie.</u></h2>
-
-        <p class="first-paragraph">
-          Dosiahnite lepšie výsledky vašej webstránky alebo e-shopu
-          <br />
-          <b> pomocou UX auditu. </b>
-        </p>
-
-        <div class="button-wrapper">
-          <Button :click-callback="showApplyDialog">
-            Mám záujem o UX audit
-          </Button>
-        </div>
+      <div class="grid-item box-5 checkmarks-wrapper">
+        <Text
+          value="Odhalíme nedostatky na vašej stránke"
+          icon="mdiCheckCircle"
+          iconColor="#6bbc13" />
+        <Text
+          value="Zvýšime konverzný pomer vašich stránok"
+          icon="mdiCheckCircle"
+          iconColor="#6bbc13" />
+        <Text
+          value="Zvýšime výkon marketingových kampaní"
+          icon="mdiCheckCircle"
+          iconColor="#6bbc13" />
+        <Text
+          value="Znížime vaše náklady na vývoj"
+          icon="mdiCheckCircle"
+          iconColor="#6bbc13" />
+        <Text
+          value="Zvýšime návštevnosť vašich stránok"
+          icon="mdiCheckCircle"
+          iconColor="#6bbc13" />
       </div>
 
-      <div class="column second-column">
-        <div class="partners"></div>
+      <div class="grid-item box-6 button-wrapper">
+        <Button :click-callback="showApplyDialog">
+          Mám záujem o UX audit
+        </Button>
+      </div>
 
-        <div class="checkmarks-wrapper">
-          <Text
-            value="Informačnú architektúru a štruktúru kategórií"
-            icon="mdiCheckCircle"
-            iconColor="#6bbc13" />
-          <Text
-            value="Správanie návštevníkov na kľúčových stránkach"
-            icon="mdiCheckCircle"
-            iconColor="#6bbc13" />
-          <Text
-            value="Rýchlosť a dostupnosť stránok, SEO nastavenia"
-            icon="mdiCheckCircle"
-            iconColor="#6bbc13" />
-          <Text
-            value="Váš biznis a vašich zákazníkov"
-            icon="mdiCheckCircle"
-            iconColor="#6bbc13" />
-          <Text
-            value="Ciele, ktoré chcete dosiahnuť"
-            icon="mdiCheckCircle"
-            iconColor="#6bbc13" />
-          <Text
-            value="Webovú analytiku"
-            icon="mdiCheckCircle"
-            iconColor="#6bbc13" />
-        </div>
+      <ReviewsList class="grid-item box-7" :reviews="reviews" />
+
+      <h2 class="grid-item box-8 middle-title">
+        Rýchla a jednoduchá cesta k <u>výsledkom.</u>
+      </h2>
+
+      <Goals class="grid-item box-9" />
+
+      <h2 class="grid-item box-10">
+        Zameriame sa na to <u>najdôležitejšie.</u>
+      </h2>
+
+      <p class="grid-item box-11 first-paragraph">
+        Dosiahnite lepšie výsledky vašej webstránky alebo e-shopu
+        <br />
+        <b> pomocou UX auditu. </b>
+      </p>
+
+      <div class="grid-item box-12 button-wrapper">
+        <Button :click-callback="showApplyDialog">
+          Mám záujem o UX audit
+        </Button>
+      </div>
+
+      <div class="grid-item box-13 checkmarks-wrapper">
+        <Text
+          value="Informačnú architektúru a štruktúru kategórií"
+          icon="mdiCheckCircle"
+          iconColor="#6bbc13" />
+        <Text
+          value="Správanie návštevníkov na kľúčových stránkach"
+          icon="mdiCheckCircle"
+          iconColor="#6bbc13" />
+        <Text
+          value="Rýchlosť a dostupnosť stránok, SEO nastavenia"
+          icon="mdiCheckCircle"
+          iconColor="#6bbc13" />
+        <Text
+          value="Váš biznis a vašich zákazníkov"
+          icon="mdiCheckCircle"
+          iconColor="#6bbc13" />
+        <Text
+          value="Ciele, ktoré chcete dosiahnuť"
+          icon="mdiCheckCircle"
+          iconColor="#6bbc13" />
+        <Text
+          value="Webovú analytiku"
+          icon="mdiCheckCircle"
+          iconColor="#6bbc13" />
       </div>
     </div>
   </div>
@@ -137,162 +129,226 @@ const showApplyDialog = () => {
 
 <style scoped lang="scss">
 .main {
-  .columns-wrapper {
+  margin-top: 30px;
+
+  .grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(39, 50px);
+    grid-gap: 20px;
+    max-width: 65%;
+    margin: auto;
+  }
+
+  .box-1 {
+    // place to the top left corner
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+  }
+
+  .box-2 {
+    grid-column: 1 / 2;
+    grid-row: 4 / 7;
+  }
+
+  .box-3 {
+    grid-column: 1 / 2;
+    grid-row: 7 / 10;
+    margin-top: 10px;
+  }
+
+  .box-4 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .box-5 {
+    grid-column: 2 / 3;
+    grid-row: 3 / 7;
+  }
+
+  .box-6 {
+    grid-column: 2 / 3;
+    grid-row: 7 / 8;
+  }
+
+  .box-7 {
+    grid-column: 1 / 3;
+    grid-row: 9 / 18;
+  }
+
+  .box-8 {
+    grid-column: 1 / 3;
+    grid-row: 17 / 18;
+    margin: auto;
+    text-align: center;
+    max-width: 500px;
+  }
+
+  .box-9 {
+    grid-column: 1 / 3;
+    grid-row: 21 / 28;
+  }
+
+  .box-10 {
+    grid-column: 1 / 2;
+    grid-row: 31 / 33;
+    width: 460px;
+  }
+
+  .box-11 {
+    grid-column: 1 / 2;
+    grid-row: 34 / 36;
+  }
+
+  .box-12 {
+    grid-column: 1 / 2;
+    grid-row: 36 / 38;
+  }
+
+  .box-13 {
+    grid-column: 2 / 3;
+    grid-row: 33 / 34;
+  }
+
+  .partners {
     display: flex;
-    justify-content: center;
-    gap: 40px;
-    width: 100%;
+    gap: 20px;
+    height: 186px;
+    user-select: none;
 
-    .column {
-      width: 500px;
-      text-align: left;
+    img {
+      width: 185px;
+      height: 86px;
     }
+  }
 
-    .first-column {
-      h2 {
-        width: 431px;
-        margin-bottom: 50px;
-      }
+  .checkmarks-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 120px;
+  }
 
-      .first-paragraph {
-        width: 439px;
-        margin-bottom: 100px;
-      }
+  .button-wrapper {
+    display: flex;
+    justify-content: left;
+    margin-top: 30px;
 
-      .second-paragraph {
-        width: 496px;
-      }
-    }
-
-    .second-column {
-      .partners {
-        display: flex;
-        gap: 20px;
-        height: 186px;
-        user-select: none;
-
-        img {
-          width: 185px;
-          height: 86px;
-        }
-      }
-
-      .checkmarks-wrapper {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        margin-bottom: 120px;
-      }
-
-      .button-wrapper {
-        display: flex;
-        justify-content: center;
-        margin-top: 40px;
-
-        .button {
-          width: 380px;
-          height: 72px;
-          font-size: 20px;
-        }
-      }
+    .button {
+      width: 380px;
+      height: 72px;
+      font-size: 20px;
     }
   }
 
   .middle-title {
-    width: 600px;
-    text-align: center;
-    margin: auto;
+    width: 100%;
     margin-top: 50px;
     margin-bottom: 100px;
-  }
-
-  .bottom-columns {
-    margin-top: 100px;
-
-    .button-wrapper {
-      display: flex;
-      margin-top: -60px;
-
-      .button {
-        width: 380px;
-        height: 72px;
-        font-size: 20px;
-      }
-    }
-
-    .checkmarks-wrapper {
-      margin-top: -40px;
-    }
   }
 }
 
 @media (max-width: 425px) {
   .main {
-    .columns-wrapper {
-      flex-direction: column;
-      gap: 20px;
-
-      .column {
-        width: 100%;
-
-        h2 {
-          width: 100%;
-          margin-bottom: 20px;
-        }
-
-        .first-paragraph {
-          width: 100%;
-          margin-bottom: 40px;
-        }
-
-        .second-paragraph {
-          width: 100%;
-        }
-      }
-
-      .second-column {
-        .partners {
-          img {
-            width: 120px;
-            height: 56px;
-          }
-        }
-
-        .checkmarks-wrapper {
-          gap: 10px;
-          margin-bottom: 40px;
-        }
-
-        .button-wrapper {
-          .button {
-            width: 100%;
-            height: 60px;
-            font-size: 16px;
-          }
-        }
-      }
+    .grid-wrapper {
+      grid-template-columns: 100%;
+      grid-template-rows: repeat(145, 10px);
+      max-width: 100%;
+      height: fit-content;
     }
 
-    .middle-title {
-      width: 100%;
-      margin-top: 20px;
-      margin-bottom: 80px;
+    .box-4 {
+      grid-column: 1;
+      grid-row: 1;
+    }
+
+    .box-1 {
+      grid-column: 1;
+      grid-row: 4;
       text-align: left;
     }
 
-    .bottom-columns {
-      margin-top: 40px;
+    .box-2 {
+      grid-column: 1;
+      grid-row: 10;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 40px;
+    }
 
-      .button-wrapper {
-        .button {
-          width: 100%;
-          height: 60px;
-          font-size: 16px;
-        }
+    .box-5 {
+      grid-column: 1;
+      grid-row: 20;
+    }
+
+    .box-3 {
+      grid-column: 1;
+      grid-row: 33;
+      font-size: 22px;
+    }
+
+    .box-6 {
+      grid-column: 1;
+      grid-row: 39;
+    }
+
+    .box-7 {
+      grid-column: 1;
+      grid-row: 42;
+    }
+
+    .box-8 {
+      grid-column: 1;
+      grid-row: 80;
+      text-align: left;
+    }
+
+    .box-9 {
+      grid-column: 1;
+      grid-row: 89;
+    }
+
+    .box-10 {
+      grid-column: 1;
+      grid-row: 115;
+      width: 100%;
+    }
+
+    .box-13 {
+      grid-column: 1;
+      grid-row: 120;
+    }
+
+    .box-11 {
+      grid-column: 1;
+      grid-row: 135;
+      font-size: 22px;
+    }
+
+    .box-12 {
+      grid-column: 1;
+      grid-row: 141;
+    }
+
+    .partners {
+      height: 86px;
+
+      img {
+        width: 120px;
+        height: 56px;
       }
+    }
 
-      .checkmarks-wrapper {
-        margin-top: -20px;
+    .checkmarks-wrapper {
+      margin-bottom: 40px;
+    }
+
+    .button-wrapper {
+      .button {
+        width: 100%;
+        height: 60px;
+        font-size: 16px;
       }
     }
   }

@@ -69,7 +69,7 @@ onBeforeMount(() => {
   height: 140px;
   width: 600px;
   transition: var(--goal-transition);
-  margin-bottom: 80px;
+  margin-bottom: 20px;
 
   &.goal-right {
     margin-left: 350px;
@@ -95,7 +95,7 @@ onBeforeMount(() => {
 
     .text {
       font-size: 16px;
-      font-weight: 400;
+      font-weight: 700;
       line-height: 28px;
       text-align: left;
     }
@@ -107,6 +107,7 @@ onBeforeMount(() => {
     gap: 20px;
     height: 100px;
     width: 100%;
+    margin-bottom: 100px;
 
     &.goal-right {
       margin-left: 0;
@@ -125,8 +126,7 @@ onBeforeMount(() => {
       }
 
       .text {
-        font-size: 14px;
-        line-height: 24px;
+        font-weight: 400;
       }
     }
   }
