@@ -78,8 +78,8 @@ const readMore = () => {
   width: 420px;
 
   .text-with-quotes {
-    border: 1px solid #d6d8dd;
-    height: 264px;
+    border: var(--border-light);
+    height: 290px;
     margin-bottom: 20px;
 
     .quotes {
@@ -105,12 +105,17 @@ const readMore = () => {
       line-height: 32px;
       text-align: left;
       cursor: pointer;
+      user-select: none;
     }
   }
 
   .author-row {
     display: flex;
     gap: 20px;
+
+    img {
+      user-select: none;
+    }
 
     .company-data {
       height: 65px;

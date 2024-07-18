@@ -7,7 +7,7 @@
 <style scoped lang="scss">
 .button {
   background-color: var(--pink);
-  color: white;
+  color: var(--white);
   border: none;
   padding: 0 15px;
   font-size: 14px;
@@ -15,10 +15,17 @@
   line-height: 52px;
   cursor: pointer;
   border-radius: 10px;
-  transition: background-color 0.3s ease;
-}
+  transition: var(--btn-transition);
+  user-select: none;
 
-.button:hover {
-  background-color: var(--pink-hover);
+  &:hover {
+    background: var(--pink-hover);
+    scale: 1.05;
+  }
+
+  &:active {
+    background: var(--pink-active);
+    scale: 1;
+  }
 }
 </style>

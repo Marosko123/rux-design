@@ -161,6 +161,7 @@ const reviews = [
         display: flex;
         gap: 20px;
         height: 186px;
+        user-select: none;
 
         img {
           width: 185px;

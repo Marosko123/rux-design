@@ -6,13 +6,17 @@
     </div>
 
     <div class="title-wrapper">
-      <h1>Zvýšte svoje zisky optimalizáciou vášho eshopu.</h1>
+      <h1 class="heading-header">
+        Zvýšte svoje zisky optimalizáciou vášho eshopu.
+      </h1>
     </div>
   </div>
 </template>
 
 <style scoped lang="scss">
 .header {
+  background: var(--linear-gradient-header);
+
   .top-line {
     display: flex;
     justify-content: space-between;

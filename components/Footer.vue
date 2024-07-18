@@ -1,7 +1,7 @@
 <template>
-  <div class="footer big-padding color-gradient-to-right-bottom">
+  <div class="footer big-padding">
     <div class="title-wrapper">
-      <h1>Máte otázky? Jednoducho sa spýtajte.</h1>
+      <h1 class="heading-footer">Máte otázky? Jednoducho sa spýtajte.</h1>
     </div>
 
     <div class="contact-line">
@@ -15,6 +15,8 @@
 
 <style scoped lang="scss">
 .footer {
+  background: var(--linear-gradient-footer);
+
   .title-wrapper {
     margin: auto;
     margin-top: 140px;
@@ -33,7 +35,7 @@
     font-weight: 700;
     line-height: 40px;
     text-align: left;
-    color: white;
+    color: var(--white);
   }
 
   .logo {
@@ -41,6 +43,7 @@
     margin: auto;
     width: 300px;
     height: 50px;
+    user-select: none;
   }
 }
 </style>

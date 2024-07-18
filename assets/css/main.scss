@@ -1,17 +1,54 @@
+// ------ FONTS ------
 @import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
 
 :root {
+  // ------ COLORS ------
+  --black: #000000;
+  --black-2: #040405;
+  --dark: #080809;
+  --dark-hover: #0c0d0e;
+  --white: #ffffff;
+  --white-transparent: #ffffffe5;
+  --light: #e7e8eb;
+  --light-gray: #d6d8dd;
+  --light-gray-hover: #efefef;
+  --gray: #7e7e7e;
   --pink: #ee325c;
   --pink-hover: #d61f4d;
+  --pink-active: #f698ad;
+  --red: #ff0d2b;
+  --light-yellow: #e1d18a;
+  --purple: #3d2d82;
+  --green-icon: "#6bbc13";
+
+  // ------ BORDERS ------
+  --border-light: 1px solid var(--light-gray);
+
+  // ------ GRADIENTS ------
+  --linear-gradient-header: linear-gradient(
+    159.13deg,
+    #3d2e80 51.38%,
+    #dc1969 125.72%
+  );
+  --linear-gradient-footer: linear-gradient(
+    142.89deg,
+    #3d2e80 38.81%,
+    #dc1969 112.05%
+  );
+
+  // ------ ANIMATIONS ------
+  --transition-duration: 0.3s;
+  --transition-duration-slow: 0.5s;
+  --btn-transition: all var(--transition-duration) ease-in-out;
+  --goal-transition: all var(--transition-duration) ease-in-out;
+  --goal-transition: all var(--transition-duration-slow);
 }
 
 body {
   margin: 0;
 }
 
-h1,
-h2,
-h3,
+div,
 span,
 p {
   font-family: "Mulish";
@@ -20,18 +57,11 @@ p {
 }
 
 h1 {
-  color: white;
-  font-size: 50px;
-  font-weight: 900;
-  line-height: 80px;
+  @include heading-1;
 }
 
 h2 {
-  color: black;
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 64px;
-  text-align: left;
+  @include heading-2;
 }
 
 p {
@@ -45,16 +75,17 @@ a {
   color: var(--pink);
   text-decoration: none;
   font-weight: bold;
+  transition: var(--btn-transition);
 
   &:hover {
     color: var(--pink-hover);
+  }
+
+  &:active {
+    color: var(--pink-active);
   }
 }
 
 .big-padding {
   padding: 40px;
-}
-
-.color-gradient-to-right-bottom {
-  background: linear-gradient(159.13deg, #3d2e80 51.38%, #dc1969 125.72%);
 }

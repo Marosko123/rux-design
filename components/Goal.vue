@@ -61,9 +61,14 @@ onBeforeMount(() => {
   gap: 40px;
   height: 140px;
   width: 600px;
+  transition: var(--goal-transition);
 
   &.goal-right {
     margin-left: 350px;
+  }
+
+  &:hover {
+    scale: 1.05;
   }
 
   .content {

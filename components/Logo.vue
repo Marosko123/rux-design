@@ -17,12 +17,19 @@
   gap: 10px;
   font-size: 20px;
   font-weight: bold;
-  color: #fff;
+  color: var(--white);
 
   img {
     width: 40px;
     height: 48px;
     border-radius: 0;
+    transition: var(--goal-transition);
+    user-select: none;
+
+    &:hover {
+      transform: rotate(360deg);
+      scale: 1.1;
+    }
   }
 
   .logo-text {
