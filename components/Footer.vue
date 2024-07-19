@@ -44,6 +44,7 @@
     width: 300px;
     height: 50px;
     user-select: none;
+    margin-bottom: 100px;
   }
 }
 
