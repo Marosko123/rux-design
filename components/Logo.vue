@@ -1,6 +1,6 @@
 <template>
   <div class="logo">
-    <img src="/logo.png" alt="logo" />
+    <img src="/public/logo.png" alt="logo" />
 
     <div class="logo-text">
       <span class="big">UX Design</span>

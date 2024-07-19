@@ -17,8 +17,8 @@
       </p>
 
       <div class="grid-item box-4 partners animation-hidden">
-        <img src="/google_partner.png" alt="google partner" />
-        <img src="/member_of_adma.png" alt="member of adma" />
+        <img src="/public/google_partner.png" alt="google partner" />
+        <img src="/public/member_of_adma.png" alt="member of adma" />
       </div>
 
       <div class="grid-item box-5 checkmarks-wrapper">

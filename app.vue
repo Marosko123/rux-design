@@ -14,7 +14,7 @@ useSeoMeta({
     "This app was created to showcase my skill in design and development.",
   ogDescription:
     "This app was created to showcase my skill in design and development.",
-  ogImage: "./logo.png",
+  ogImage: "/public/logo.png",
   ogType: "website",
 });
 </script>

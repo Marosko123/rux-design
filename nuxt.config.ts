@@ -5,9 +5,9 @@ export default defineNuxtConfig({
   pages: true,
   css: ["@/assets/css/main.scss"],
   modules: ["nuxt-mdi", "@nuxt/ui"],
-  // typescript: {
-  //   typeCheck: true,
-  // },
+  app: {
+    baseURL: process.env.NUXT_APP_BASE_URL || "",
+  },
   vite: {
     css: {
       preprocessorOptions: {
