@@ -53,7 +53,7 @@ const getClassList = () => {
 
 const insertText = () => {
   const goalElement = document.querySelector(`#${getId()}`) as HTMLElement;
-  const textElement = goalElement.querySelector(".text") as HTMLElement;
+  const textElement = goalElement?.querySelector(".text") as HTMLElement;
   textElement.innerHTML = props.text;
 };
 
