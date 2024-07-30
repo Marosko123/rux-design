@@ -9,7 +9,7 @@
       <a href="mailto:uxdesign@riesenia.com">uxdesign@riesenia.com</a>
     </div>
 
-    <img class="logo" src="/logo-long.png" alt="Riesenia logo" />
+    <img class="logo" src="/logo_long.png" alt="Riesenia logo" />
   </div>
 </template>
 
