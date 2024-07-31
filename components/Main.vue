@@ -217,12 +217,13 @@ onMounted(() => {
 
     .reviewss {
       &.animation-hidden {
-        transform: translateX(-200px);
+        position: relative;
+        left: -200px;
         transition: all 1s;
       }
 
       &.animation-visible {
-        transform: translateX(0);
+        left: 0;
       }
     }
 
@@ -253,11 +254,13 @@ onMounted(() => {
 
     .checkmarks {
       &.animation-hidden {
-        transform: translateX(200px);
+        transition: all 1s;
+        position: relative;
+        left: 200px;
       }
 
       &.animation-visible {
-        transform: translateX(0);
+        left: 0;
       }
     }
 

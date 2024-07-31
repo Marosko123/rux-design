@@ -5,7 +5,7 @@
     </div>
 
     <div class="contact-line">
-      <span class="phone">+421 (02) 555 65 726</span>
+      <a href="tel:+421 (02) 555 65 726" class="phone">+421 (02) 555 65 726</a>
       <a href="mailto:uxdesign@riesenia.com">uxdesign@riesenia.com</a>
     </div>
 
@@ -35,7 +35,10 @@
     font-weight: 700;
     line-height: 40px;
     text-align: left;
-    color: var(--white);
+
+    .phone {
+      color: var(--white);
+    }
   }
 
   .logo {

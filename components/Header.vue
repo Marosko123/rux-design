@@ -48,7 +48,7 @@ const showApplyDialog = () => {
 
       .register-button {
         position: absolute;
-        top: 350px;
+        top: 300px;
         left: calc(50% - 100px);
       }
     }
@@ -57,7 +57,7 @@ const showApplyDialog = () => {
       margin-top: 40px;
       margin-bottom: 130px;
       width: 100%;
-      padding: 0 20px;
+      padding: 0 8px;
     }
   }
 }
