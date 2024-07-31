@@ -48,7 +48,7 @@
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 426px) {
   .footer {
     .title-wrapper {
       margin-top: 40px;

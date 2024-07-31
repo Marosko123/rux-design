@@ -77,6 +77,8 @@ const readMore = () => {
   height: 400px;
   width: 420px;
   transition: var(--review-transition);
+  margin-top: 30px;
+  margin-bottom: 20px;
 
   &:hover {
     scale: 1.05;
@@ -137,7 +139,7 @@ const readMore = () => {
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 426px) {
   .review {
     width: 100%;
     height: auto;

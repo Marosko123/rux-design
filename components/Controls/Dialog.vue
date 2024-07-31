@@ -165,7 +165,7 @@ const closeClicked = () => {
   resetData();
 };
 
-onMounted(() => {
+const addMessageListener = () => {
   window.addEventListener("message", event => {
     if (event.data === "open-dialog") {
       isOpen.value = true;
@@ -174,6 +174,10 @@ onMounted(() => {
       isOpen.value = false;
     }
   });
+};
+
+onMounted(() => {
+  addMessageListener();
 });
 </script>
 
@@ -309,7 +313,7 @@ onMounted(() => {
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 426px) {
   .dialog-wrapper {
     .dialog {
       width: 85%;

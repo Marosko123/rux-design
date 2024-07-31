@@ -102,7 +102,7 @@ onBeforeMount(() => {
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 426px) {
   .goal {
     gap: 20px;
     height: 100px;

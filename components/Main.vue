@@ -1,27 +1,22 @@
 <template>
   <div class="main big-padding">
     <div class="grid-wrapper">
-      <h2 class="grid-item box-1 animation-hidden">
+      <h2 class="first-title animation-hidden">
         Rýchle <u>výsledky</u> pomocou UX auditu.
       </h2>
 
-      <p class="grid-item box-2 first-paragraph animation-hidden">
+      <div class="partners animation-hidden">
+        <img src="/public/google_partner.png" alt="google partner" />
+        <img src="/public/member_of_adma.png" alt="member of adma" />
+      </div>
+
+      <p class="first-paragraph animation-hidden">
         UX auditom vášho riešenia lepšie pochopíte, ako vaši zákazníci používajú
         váš produkt,
         <b> zvýšite ich spokojnosť a hlavne vaše zisky. </b>
       </p>
 
-      <p class="grid-item box-3 second-paragraph animation-hidden">
-        Dosiahnite lepšie výsledky vašej webstránky alebo e-shopu
-        <b>pomocou UX auditu.</b>
-      </p>
-
-      <div class="grid-item box-4 partners animation-hidden">
-        <img src="/public/google_partner.png" alt="google partner" />
-        <img src="/public/member_of_adma.png" alt="member of adma" />
-      </div>
-
-      <div class="grid-item box-5 checkmarks-wrapper">
+      <div class="checkmarks-wrapper checkmarks-wrapper-1">
         <ControlsText
           class="checkmarks animation-hidden"
           value="Odhalíme nedostatky na vašej stránke"
@@ -49,39 +44,36 @@
           iconColor="#6bbc13" />
       </div>
 
-      <div class="grid-item box-6 button-wrapper animation-hidden">
+      <p class="second-paragraph animation-hidden">
+        Dosiahnite lepšie výsledky vašej webstránky alebo e-shopu
+        <b>pomocou UX auditu.</b>
+      </p>
+
+      <div class="button-1 button-wrapper animation-hidden">
         <ControlsButton :click-callback="showApplyDialog">
           Mám záujem o UX audit
         </ControlsButton>
       </div>
 
-      <ReviewsList
-        class="grid-item reviewss box-7 animation-hidden"
-        :reviews="reviews" />
+      <ReviewsList class="reviewss animation-hidden" :reviews="reviews" />
 
-      <h2 class="grid-item box-8 middle-title animation-hidden">
+      <h2 class="second-title animation-hidden">
         Rýchla a jednoduchá cesta k <u>výsledkom.</u>
       </h2>
 
-      <GoalsGoalss class="grid-item box-9 animation-hidden" />
+      <GoalsGoalss class="goals-wrapper animation-hidden" />
 
-      <h2 class="grid-item box-10 animation-hidden">
+      <h2 class="third-title animation-hidden">
         Zameriame sa na to <u>najdôležitejšie.</u>
       </h2>
 
-      <p class="grid-item box-11 first-paragraph animation-hidden">
+      <p class="third-paragraph animation-hidden">
         Dosiahnite lepšie výsledky vašej webstránky alebo e-shopu
         <br />
         <b> pomocou UX auditu. </b>
       </p>
 
-      <div class="grid-item box-12 button-wrapper animation-hidden">
-        <ControlsButton :click-callback="showApplyDialog">
-          Mám záujem o UX audit
-        </ControlsButton>
-      </div>
-
-      <div class="grid-item box-13 checkmarks-wrapper">
+      <div class="checkmarks-wrapper checkmarks-wrapper-2">
         <ControlsText
           class="animation-hidden checkmarks"
           value="Informačnú architektúru a štruktúru kategórií"
@@ -113,6 +105,12 @@
           icon="mdiCheckCircle"
           iconColor="#6bbc13" />
       </div>
+
+      <div class="button-2 button-wrapper animation-hidden">
+        <ControlsButton :click-callback="showApplyDialog">
+          Mám záujem o UX audit
+        </ControlsButton>
+      </div>
     </div>
   </div>
 </template>
@@ -141,7 +139,7 @@ const showApplyDialog = () => {
   window.postMessage("open-dialog");
 };
 
-onMounted(() => {
+const startAnimation = () => {
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -156,96 +154,59 @@ onMounted(() => {
   hiddenElements.forEach(element => {
     observer.observe(element);
   });
+};
+
+onMounted(() => {
+  startAnimation();
 });
 </script>
 
 <style scoped lang="scss">
 .main {
   margin-top: 30px;
+  margin-bottom: 150px;
 
   .grid-wrapper {
     display: grid;
-    grid-template-columns: repeat(2, 50%);
-    grid-template-rows: repeat(39, 50px);
-    grid-gap: 20px;
+    grid-gap: 0 20px;
     max-width: 65%;
     margin: auto;
+    grid-template-columns: 1fr 1fr;
 
-    .box-1 {
-      // place to the top left corner
-      grid-column: 1 / 2;
-      grid-row: 1 / 4;
+    // all grid columns for these elements
+    .second-title,
+    .third-title,
+    .goals-wrapper,
+    .reviewss {
+      grid-column: 1 / -1;
     }
 
-    .box-2 {
-      grid-column: 1 / 2;
-      grid-row: 4 / 7;
-    }
-
-    .box-3 {
-      grid-column: 1 / 2;
-      grid-row: 7 / 10;
-      margin-top: 10px;
-    }
-
-    .box-4 {
-      grid-column: 2 / 3;
-      grid-row: 1 / 2;
-    }
-
-    .box-5 {
-      grid-column: 2 / 3;
-      grid-row: 3 / 7;
-    }
-
-    .box-6 {
-      grid-column: 2 / 3;
-      grid-row: 7 / 8;
-    }
-
-    .box-7 {
-      grid-column: 1 / 3;
-      grid-row: 9 / 18;
-    }
-
-    .box-8 {
-      grid-column: 1 / 3;
-      grid-row: 17 / 18;
-      margin: auto;
+    .second-title {
       text-align: center;
-      max-width: 500px;
+      margin: 100px auto;
+      max-width: 600px;
     }
 
-    .box-9 {
-      grid-column: 1 / 3;
-      grid-row: 21 / 28;
+    .third-title {
+      max-width: 600px;
+      margin-top: 50px;
     }
 
-    .box-10 {
-      grid-column: 1 / 2;
-      grid-row: 31 / 33;
-      width: 460px;
+    .first-paragraph {
+      margin-top: auto;
     }
 
-    .box-11 {
-      grid-column: 1 / 2;
-      grid-row: 34 / 36;
+    .second-paragraph {
+      margin: 100px 0;
     }
 
-    .box-12 {
-      grid-column: 1 / 2;
-      grid-row: 36 / 38;
-    }
-
-    .box-13 {
-      grid-column: 2 / 3;
-      grid-row: 33 / 34;
+    .third-paragraph {
+      margin: 25px 0;
     }
 
     .partners {
       display: flex;
       gap: 20px;
-      height: 186px;
       user-select: none;
 
       img {
@@ -265,17 +226,8 @@ onMounted(() => {
       }
     }
 
-    .checkmarks-wrapper {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      margin-bottom: 120px;
-    }
-
     .button-wrapper {
-      display: flex;
-      justify-content: left;
-      margin-top: 30px;
+      align-content: center;
 
       .button {
         width: 380px;
@@ -284,10 +236,29 @@ onMounted(() => {
       }
     }
 
-    .middle-title {
-      width: 100%;
-      margin-top: 50px;
-      margin-bottom: 100px;
+    .checkmarks-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .checkmarks-wrapper-1 {
+      margin-top: -20px;
+    }
+
+    .checkmarks-wrapper-2 {
+      grid-column: 2 / 3;
+      grid-row: 8 / 10;
+    }
+
+    .checkmarks {
+      &.animation-hidden {
+        transform: translateX(200px);
+      }
+
+      &.animation-visible {
+        transform: translateX(0);
+      }
     }
 
     .animation-hidden {
@@ -299,43 +270,6 @@ onMounted(() => {
       opacity: 1;
     }
 
-    .box-5,
-    .box-13 {
-      .checkmarks {
-        &.animation-hidden {
-          transform: translateX(100px);
-        }
-
-        &.animation-visible {
-          transform: translateX(0);
-        }
-      }
-
-      .checkmarks:nth-child(1) {
-        transition-delay: 200ms;
-      }
-
-      .checkmarks:nth-child(2) {
-        transition-delay: 400ms;
-      }
-
-      .checkmarks:nth-child(3) {
-        transition-delay: 600ms;
-      }
-
-      .checkmarks:nth-child(4) {
-        transition-delay: 800ms;
-      }
-
-      .checkmarks:nth-child(5) {
-        transition-delay: 1000ms;
-      }
-
-      .checkmarks:nth-child(6) {
-        transition-delay: 1200ms;
-      }
-    }
-
     @media (prefers-reduced-motion) {
       .animation-hidden {
         transition: none;
@@ -344,98 +278,50 @@ onMounted(() => {
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 426px) {
   .main {
+    margin-bottom: 50px;
+
     .grid-wrapper {
-      grid-template-columns: 100%;
-      grid-template-rows: repeat(145, 10px);
-      max-width: 100%;
-      height: fit-content;
+      grid-template-columns: 1fr;
+      max-width: 90%;
+      margin: auto;
+      gap: 40px;
 
-      .box-4 {
-        grid-column: 1;
-        grid-row: 1;
+      // we need to override the grid-column property
+      // for the elements that are in the second column
+      & > * {
+        grid-column: 1 / -1 !important;
       }
 
-      .box-1 {
-        grid-column: 1;
-        grid-row: 4;
-        text-align: left;
-      }
-
-      .box-2 {
-        grid-column: 1;
-        grid-row: 10;
-        font-size: 20px;
-        font-weight: 400;
-        line-height: 40px;
-      }
-
-      .box-5 {
-        grid-column: 1;
-        grid-row: 20;
-      }
-
-      .box-3 {
-        grid-column: 1;
-        grid-row: 33;
+      .first-paragraph,
+      .second-paragraph,
+      .third-paragraph {
         font-size: 22px;
       }
 
-      .box-6 {
-        grid-column: 1;
-        grid-row: 39;
+      .second-paragraph {
+        margin: 0;
       }
 
-      .box-7 {
-        grid-column: 1;
-        grid-row: 42;
+      .second-title,
+      .third-title {
+        margin: 0px;
+        margin-bottom: 40px;
       }
 
-      .box-8 {
-        grid-column: 1;
-        grid-row: 80;
-        text-align: left;
-      }
-
-      .box-9 {
-        grid-column: 1;
-        grid-row: 89;
-      }
-
-      .box-10 {
-        grid-column: 1;
-        grid-row: 115;
-        width: 100%;
-      }
-
-      .box-13 {
-        grid-column: 1;
-        grid-row: 120;
-      }
-
-      .box-11 {
-        grid-column: 1;
-        grid-row: 135;
-        font-size: 22px;
-      }
-
-      .box-12 {
-        grid-column: 1;
-        grid-row: 141;
+      .checkmarks-wrapper-2 {
+        grid-row: 11 / 13;
       }
 
       .partners {
         height: 86px;
+        grid-row: 1;
 
         img {
           width: 120px;
           height: 56px;
         }
-      }
-
-      .checkmarks-wrapper {
-        margin-bottom: 40px;
       }
 
       .button-wrapper {

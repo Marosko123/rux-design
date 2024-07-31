@@ -14,7 +14,7 @@
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
   font-size: 20px;
   font-weight: bold;
   color: var(--white);
@@ -28,20 +28,19 @@
 
     &:hover {
       transform: rotate(360deg);
-      scale: 1.1;
+      scale: 1.2;
     }
   }
 
   .logo-text {
     .big {
-      gap: 0;
       font-size: 20px;
     }
 
     .small {
       font-size: 8px;
       position: relative;
-      top: -10px;
+      top: -17px;
     }
   }
 }

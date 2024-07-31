@@ -41,7 +41,7 @@ const showApplyDialog = () => {
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 426px) {
   .header {
     .top-line {
       padding: 0;

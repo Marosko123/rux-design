@@ -23,10 +23,9 @@ const props = defineProps({
   display: flex;
   justify-content: center;
   gap: 40px;
-  margin-top: 100px;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 426px) {
   .reviews-list {
     flex-direction: column;
     height: fit-content;
