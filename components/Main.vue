@@ -124,14 +124,14 @@ const reviews = [
     "Konateľ",
     "SvetNápojov.sk",
     "logo_svetnapojov.png",
-    "Pravidelné UX audity a postupné vylepšovanie nášho internetového obchodu je už niekoľko rokov súčasťou našej dlhodobej stratégie v predaji. UX tím v Riešeniach odvádza skvelú prácu, ktorú sprevádzajú viditeľné výsledky a spokojnosť našich zákazníkov. Okrem ich prístupu k nášmu biznisu. Zmazat Zmazat Zmazat Zmazat Zmazat Zmazat Zmazat Zmazat Zmazat Zmazat Zmazat Zmazat Zmazat Zmazat Zmazat Zmazat Zmazat Zmazat Zmazat Zmazat Zmazat Zmazat"
+    "Pravidelné UX audity a postupné vylepšovanie nášho internetového obchodu je už niekoľko rokov súčasťou našej dlhodobej stratégie v predaji. UX tím v Riešeniach odvádza skvelú prácu, ktorú sprevádzajú viditeľné výsledky a spokojnosť našich zákazníkov. Okrem ich prístupu k nášmu biznisu. Dalsi text ...."
   ),
   new UserReview(
     "Richard Wohlstein",
     "Retail manager",
     "AlainDelon.sk",
     "logo_alaindelon.png",
-    "S UX tímom Riešení úzko spolupracujeme už dlhé roky a sú dôležitým partnerom nášho biznisu. Vďaka ich know-how pre nás od samého začatku správne nastavili zdravý pomer prvotriedneho dizajnu a funkčnosti webu, ktorý následne vylepšovali pomocou relevantných analýz a dát. Aj ich zásluhou. Zmazat Zmazat Zmazat Zmazat Zmazat Zmazat Zmazat Zmazat Zmazat Zmazat Zmazat Zmazat Zmazat Zmazat Zmazat Zmazat Zmazat Zmazat Zmazat Zmazat Zmazat Zmazat"
+    "S UX tímom Riešení úzko spolupracujeme už dlhé roky a sú dôležitým partnerom nášho biznisu. Vďaka ich know-how pre nás od samého začatku správne nastavili zdravý pomer prvotriedneho dizajnu a funkčnosti webu, ktorý následne vylepšovali pomocou relevantných analýz a dát. Aj ich zásluhou. Dalsi text ...."
   ),
 ];
 
@@ -179,6 +179,10 @@ onMounted(() => {
     .goals-wrapper,
     .reviewss {
       grid-column: 1 / -1;
+    }
+
+    .first-title {
+      margin: 0;
     }
 
     .second-title {

@@ -1,18 +1,10 @@
-@mixin heading-font {
-  font-family: "Mulish";
-}
-
 @mixin heading-white {
-  @include heading-font;
-
   color: $white;
   font-weight: 900;
   text-align: center;
 }
 
 @mixin heading-black {
-  @include heading-font;
-
   color: $black;
   font-weight: 700;
   text-align: left;

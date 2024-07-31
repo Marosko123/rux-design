@@ -52,20 +52,6 @@ const props = defineProps({
   &:hover {
     background: $pink-hover;
     scale: 1.05;
-
-    // @keyframes change-color {
-    //   0% {
-    //     background: $pink-hover;
-    //   }
-    //   50% {
-    //     background: $pink;
-    //   }
-    //   100% {
-    //     background: $pink-hover;
-    //   }
-    // }
-
-    // animation: change-color 2.5s infinite;
   }
 
   &:active {
