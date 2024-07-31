@@ -28,8 +28,8 @@ const props = defineProps({
 
 <style scoped lang="scss">
 .button {
-  background-color: var(--pink);
-  color: var(--white);
+  background-color: $pink;
+  color: $white;
   border: none;
   padding: 0 15px;
   font-size: 14px;
@@ -37,7 +37,7 @@ const props = defineProps({
   line-height: 52px;
   cursor: pointer;
   border-radius: 10px;
-  transition: var(--btn-transition);
+  transition: $btn-transition;
   user-select: none;
 
   &.circle {
@@ -50,12 +50,26 @@ const props = defineProps({
   }
 
   &:hover {
-    background: var(--pink-hover);
+    background: $pink-hover;
     scale: 1.05;
+
+    // @keyframes change-color {
+    //   0% {
+    //     background: $pink-hover;
+    //   }
+    //   50% {
+    //     background: $pink;
+    //   }
+    //   100% {
+    //     background: $pink-hover;
+    //   }
+    // }
+
+    // animation: change-color 2.5s infinite;
   }
 
   &:active {
-    background: var(--pink-active);
+    background: $pink-active;
     scale: 1;
   }
 

@@ -68,7 +68,7 @@ onBeforeMount(() => {
   gap: 40px;
   height: 140px;
   width: 600px;
-  transition: var(--goal-transition);
+  transition: $goal-transition;
   margin-bottom: 20px;
 
   &.goal-right {

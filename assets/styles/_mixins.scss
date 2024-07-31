@@ -5,7 +5,7 @@
 @mixin heading-white {
   @include heading-font;
 
-  color: var(--white);
+  color: $white;
   font-weight: 900;
   text-align: center;
 }
@@ -13,7 +13,7 @@
 @mixin heading-black {
   @include heading-font;
 
-  color: var(--black);
+  color: $black;
   font-weight: 700;
   text-align: left;
 }

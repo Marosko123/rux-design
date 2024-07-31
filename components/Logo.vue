@@ -17,13 +17,13 @@
   gap: 5px;
   font-size: 20px;
   font-weight: bold;
-  color: var(--white);
+  color: $white;
 
   img {
     width: 40px;
     height: 48px;
     border-radius: 0;
-    transition: var(--goal-transition);
+    transition: $goal-transition;
     user-select: none;
 
     &:hover {

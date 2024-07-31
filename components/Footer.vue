@@ -15,7 +15,7 @@
 
 <style scoped lang="scss">
 .footer {
-  background: var(--linear-gradient-footer);
+  background: $linear-gradient-footer;
 
   .title-wrapper {
     margin: auto;
@@ -37,7 +37,7 @@
     text-align: left;
 
     .phone {
-      color: var(--white);
+      color: $white;
     }
   }
 

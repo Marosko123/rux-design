@@ -258,7 +258,7 @@ onMounted(() => {
             line-height: 35px;
 
             .red {
-              color: var(--pink);
+              color: $pink;
             }
           }
 
@@ -266,7 +266,7 @@ onMounted(() => {
           input {
             width: 45%;
             height: 40px;
-            background: var(--light-gray-2);
+            background: $light-gray-2;
             width: 100%;
             border: none;
             border-radius: 5px;
@@ -296,10 +296,10 @@ onMounted(() => {
           margin: 0px;
           margin-top: 10px;
           font-weight: 900;
-          background: var(--light-green);
+          background: $light-greenn;
           border-radius: 5px;
           text-align: center;
-          color: var(--green);
+          color: $green;
         }
 
         .redirect-message {

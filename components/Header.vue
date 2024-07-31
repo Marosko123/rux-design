@@ -23,7 +23,7 @@ const showApplyDialog = () => {
 
 <style scoped lang="scss">
 .header {
-  background: var(--linear-gradient-header);
+  background: $linear-gradient-header;
   width: 100vw;
 
   .top-line {

@@ -1,0 +1,43 @@
+// ------ COLORS ------ //
+$black: #000000;
+$black-2: #040405;
+$dark: #080809;
+$dark-hover: #0c0d0e;
+$white: #ffffff;
+$white-transparent: #ffffffe5;
+$light: #e7e8eb;
+$light-gray: #d6d8dd;
+$light-gray-2: #efefef;
+$gray: #7e7e7e;
+$pink: #ee325c;
+$pink-hover: #d61f4d;
+$pink-active: #f698ad;
+$red: #ff0d2b;
+$light-yellow: #e1d18a;
+$purple: #3d2d82;
+$green-icon: "#6bbc13";
+$green: #00a74a;
+$light-greenn: #00d435;
+
+// ------ BORDERS ------
+$border-light: 1px solid $light-gray;
+
+// ------ GRADIENTS ------
+$linear-gradient-header: linear-gradient(
+  159.13deg,
+  #3d2e80 51.38%,
+  #dc1969 125.72%
+);
+$linear-gradient-footer: linear-gradient(
+  142.89deg,
+  #3d2e80 38.81%,
+  #dc1969 112.05%
+);
+
+// ------ ANIMATIONS ------
+$transition-duration: 0.3s;
+$transition-duration-slow: 0.5s;
+$btn-transition: all $transition-duration ease-in-out;
+$goal-transition: all $transition-duration ease-in-out;
+$goal-transition: all $transition-duration-slow;
+$review-transition: all $transition-duration ease-in-out;

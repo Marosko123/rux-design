@@ -76,7 +76,7 @@ const readMore = () => {
 .review {
   height: 400px;
   width: 420px;
-  transition: var(--review-transition);
+  transition: $review-transition;
   margin-top: 30px;
   margin-bottom: 20px;
 
@@ -85,7 +85,7 @@ const readMore = () => {
   }
 
   .text-with-quotes {
-    border: var(--border-light);
+    border: $border-light;
     margin-bottom: 20px;
 
     .quotes {
